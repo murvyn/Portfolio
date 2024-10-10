@@ -2,12 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import chat from "../../Assets/Projects/chat.png";
+import game from "../../Assets/Projects/game.png";
+import godly from "../../Assets/Projects/godly.png";
+import markdown from "../../Assets/Projects/markdown.png";
+import taskify from "../../Assets/Projects/taskify.png";
 
 function Projects() {
   return (
@@ -23,68 +22,56 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={markdown}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Markdown Editor"
+              description="A browser-based Markdown editor, simplifying your writing experience. With intuitive features and real-time previews, crafting Markdown documents has never been easier. Say hello to effortless editing with us!"
+              ghLink="https://github.com/murvyn/markdown-editor"
+              demoLink="https://markdown-editor-ebon-nine.vercel.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={taskify}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Taskify"
+              description="Introducing our task management web app! Simplify your productivity with easy task creation, intuitive categorization, and seamless collaboration. Take control of your to-dos effortlessly. Start organizing your tasks now!"
+              ghLink="https://github.com/murvyn/taskify"
+              demoLink="https://task-manager-one-beta.vercel.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={game}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Game Hub"
+              description="Step into our game hub and unlock a world of fun! Discover a variety of games for every player, from classics to new releases. Join the gaming community and start playing today!"
+              ghLink="https://github.com/murvyn/game-hub"
+              demoLink="https://game-hub-lilac-alpha.vercel.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={godly}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Godly Feminine Woman"
+              description="The Godly Feminine Woman blog is a platform dedicated to empowering women through faith-based content and inspirational articles. Designed with a user-friendly interface, the website offers an engaging experience where readers can easily explore topics related to spirituality, personal growth, and community support. Built with a modern web stack, the blog features responsive design, ensuring smooth access across devices. The platform highlights a clean, elegant layout that reflects the brand's values, making it not only visually appealing but also easy to navigate for visitors.."
+              ghLink="https://github.com/murvyn/gf-blog"
+              demoLink="https://www.gracefullyfeminineacademy.com/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={chat}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Chat Forum "
+              description="The Chat Forum is a cross-platform communication app designed specifically for students and lecturers. It enables real-time messaging, file sharing, and voice/video calling, creating a seamless communication hub within the university community.Powered by modern technologies, the app supports real-time communication with the help of Socket.io, ensuring instant message delivery across web and mobile devices. It also integrates Agora SDK for high-quality voice and video calls, making it easy to connect in both group and one-on-one settings. With its user-friendly interface and efficient communication tools, the Chat Forum enhances collaboration and interaction, providing a reliable space for academic discussions and social connections."
+              ghLink="https://github.com/murvyn/chat-forum.git"
+              demoLink="https://chat-forum-cyan.vercel.app/"
             />
           </Col>
         </Row>
